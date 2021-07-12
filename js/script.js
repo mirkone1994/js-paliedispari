@@ -10,7 +10,8 @@ function palindromo(string) {
         }
     }
     return "È palindroma!";
-}
+};
 var string = prompt("Inserisci una parola palindroma:");
 var palindromoResult = palindromo(string);
-console.log(palindromoResult);
+var palindromoElement = document.getElementById("palindromo");
+palindromoElement.innerHTML = palindromoResult;
