@@ -7,7 +7,10 @@ Dichiariamo chi ha vinto.*/
 var oddEven = prompt("Pari o dispari?");
 var number = parseInt(prompt("Inserisci un numero da 1 a 5"));
 console.log(number);
-var numberPc = (Math.floor(Math.random() * 5)) + 1;
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+};
+var numberPc = getRandomNumber(1, 5);
 console.log(numberPc);
 var result = number + numberPc;
 console.log(result);
